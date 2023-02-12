@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Test model for Place class"""
+"""Test model for Place class."""
 
 import unittest
 import os
@@ -98,6 +98,7 @@ class TestPlace(unittest.TestCase):
         pl = Place()
         with self.assertRaises(TypeError):
             pl.save(None)
+
 
 class TestPlace_to_dict(unittest.TestCase):
     """Unittests for testing to_dict method of the Place class."""

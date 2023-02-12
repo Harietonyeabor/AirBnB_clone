@@ -3,7 +3,7 @@
 Unittest classes:
     TestState_instantiation
     TestState_save
-    TestState_to_dict
+    TestState_to_dict.
 """
 import os
 import models
@@ -91,7 +91,7 @@ class TestState_instantiation(unittest.TestCase):
         self.assertEqual(str(type(b)), "<class 'models.state.State'>")
         self.assertIsInstance(b, State)
         self.assertTrue(issubclass(type(b), BaseModel))
-    
+
 
 if __name__ == "__main__":
     unittest.main()
